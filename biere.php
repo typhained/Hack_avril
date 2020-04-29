@@ -1,3 +1,14 @@
+<?php
+//A placer dans la biere
+require_once 'ApiClass.php';
+$cam = new WindyApi();
+//$camResult = $cam->getCityCam(43.17,5.6,10);
+//$camToShow = $camResult['camEmbed'];
+$boulogneSurMer = $cam->getCityCam(50.72,1.61,15);
+$camToShow = $boulogneSurMer['camEmbed'];
+$titleCam = $boulogneSurMer['camTitle'];
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
