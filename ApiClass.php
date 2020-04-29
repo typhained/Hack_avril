@@ -57,9 +57,9 @@ class WindyApi
         }
     }
 
-    public function getPhoto($latitude,$longitude,$perim): ?array
+    public function getPhoto($id): ?array
     {
-        $curl = curl_init("https://api.windy.com/api/webcams/v2/list/nearby=" . $latitude . ',' . $longitude . ',' . $perim . "/limit=20?show=webcams:player,image&key=" . $this->apiKeyCam);
+        $curl = curl_init("https://api.windy.com/api/webcams/v2/list/webcam=" . $id . "?show=webcams:player,image&key=" . $this->apiKeyCam);
         curl_setopt_array($curl, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 1
