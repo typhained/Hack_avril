@@ -1,8 +1,13 @@
 <?php
 
 require_once 'ApiClass.php';
-//$photo1 = $cam->getPhoto(61.617,37.046,5);
-//$photo2 = $cam->getPhoto(49.372,7.251,7);
+$cam = new WindyApi();
+$photo1 = $cam->getPhoto(61.61,37.04,245);
+$photo2 = $cam->getPhoto(49.372,7.251,7);
+$photo3 = $cam->getPhoto(38.462,-10.767,5);
+$photo4 = $cam->getPhoto(46.966,8.480,10);
+$photo5 = $cam->getPhoto(46.934,7.046,10);
+
 ?>
 
 <h2>Question n°1</h2>
@@ -17,7 +22,7 @@ require_once 'ApiClass.php';
 
 <h2>Question n°2</h2>
 <form action="validate.php" id="quest2" method="post">
-    Nous sommes en France ? :
+    Sommes nous en France ? :
     <input type="submit" name="choice2" value="Vrai">
     <input type="submit" name="choice2" value="Faux"><br>
     <img src="<?php echo $photo2['image']?>">
@@ -27,28 +32,29 @@ require_once 'ApiClass.php';
 
 <h2>Question n°3</h2>
 <form action="validate.php" id="quest3" method="post">
-    Dans quel pays sommes nous ? :
+    Sommes nous en Europe ? :
     <input type="submit" name="choice3" value="Vrai">
     <input type="submit" name="choice3" value="Faux"><br>
+    <img src="<?php echo $photo3['image']?>">
     <!-- 38.462,-10.767,5 -->
-    <!-- Réponse FAUX -->
+    <!-- Réponse VRAI -->
 </form>
 
 <h2>Question n°4</h2>
 <form action="validate.php" id="quest4" method="post">
-    ? :
+    Cette montagne est en Suisse ? :
     <input type="submit" name="choice4" value="Vrai">
     <input type="submit" name="choice4" value="Faux"><br>
-    <!-- -->
-    <!-- -->
+    <img src="<?php echo $photo4['image']?>">
+    <!-- Réponse VRAI -->
 </form>
 
 <h2>Question n°5</h2>
 <form action="validate.php" id="quest5" method="post">
     ? :
-    <input type="submit" name="choice5" value="Vrai">
-    <input type="submit" name="choice5" value="Faux"><br>
-    <!-- -->
+    <input type="submit" name="choice5" value="Espagne">
+    <input type="submit" name="choice5" value="Italie"><br>
+    <img src="<?php echo $photo5['image']?>">
     <!-- -->
 </form>
 
