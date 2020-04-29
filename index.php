@@ -9,28 +9,25 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="src/css/index.css">
     <title>Salon</title>
 </head>
 <body>
 <section id="salon" class="jour">
-    <div class="row">
-    <div class="col">
-        <p>ici naration</p>
-    </div>
-</div>
+        <article>
+            <p id="nara-index">Ici pour la naration</p>
+        </article>
+
     <div class="col" id="tv">
         <p>ici tv</p>
     </div>
     <article>
         <div class="tableBasse1">
                 <img class="table-size" src="src/img/table.png" alt="table gauche" />
-               <div>
+                <div>
                     <img src="src/img/telecommande.png" class="img-fluid" alt="telecommande" id="telecommande">
                 </div>
                 <div>
@@ -39,7 +36,6 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
                 </div>
         </div>
         <div class="tableBasse2">
-            <div>
                 <img class="table-size" src="src/img/table.png" alt="table droite" />
                 <div>
                     <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal">
@@ -50,10 +46,7 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <div>
         <p><audio src="src/beer.mp3" controls id="player"></audio></p>
     </div>
-
 </section>
-
-
 <section class="container" id="corona">
     <div class="row">
         <div class="embed-responsive embed-responsive-1by1">
@@ -62,7 +55,6 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
         <button id="coronaclose">Close</button>
     </div>
 </section>
-
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
