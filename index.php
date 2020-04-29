@@ -12,14 +12,15 @@
     <title>Salon</title>
 </head>
 <body>
+
 <section id="salon" class="jour">
     <button id="zero">Remise à zero</button>
         <article>
-            <p id="nara-index">Ici pour la naration</p>
+            <p id="nara-index">Voyons voir ce qu'il y a à la télé ce soir!</p>
         </article>
 
-    <div class="col" id="tv">
-        <p>ici tv</p>
+    <div  class="col" id="tv">
+        <p></p>
     </div>
     <article>
         <div class="tableBasse1">
@@ -45,13 +46,12 @@
     </div>
 </section>
 <section class="container" id="corona">
-    <div class="row">
-        <div class="embed-responsive embed-responsive-1by1">
-            <iframe class="embed-responsive-item" src=""></iframe>
-        </div>
-        <button id="coronaclose">Close</button>
-    </div>
+
+    <iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/uoIz2zjARkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </section>
+<div id="end">THE END</div>
+
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -60,4 +60,3 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 <script src="src/js/index.js"></script>
 </html>
-

@@ -38,7 +38,18 @@ article:first-of-type{
     background-color: #1f2931;
     color: white;
     width: 50%;
+    font-size: 20px;
 }
+
+#end {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    font-size: xxx-large;
+}
+
 #tv {
     background-color: #1f2931;
     opacity: 40%;
@@ -120,4 +131,17 @@ article:nth-of-type(2){
 
 #player {
     display: none;
+}
+
+#corona {
+    opacity : 0;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    z-index: 200;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
 }
