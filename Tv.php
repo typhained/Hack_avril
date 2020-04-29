@@ -10,13 +10,16 @@
 
     <title>tv</title>
 </head>
+
 <body>
+
 <h1>Watching Tv</h1>
 
 <section class="telecommande">
     <div class="container">
         <div class="row">
-
+            <div class="col">
+            </div>
         </div>
     </div>
 </section>
