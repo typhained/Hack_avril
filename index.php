@@ -35,7 +35,7 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
                 </div>
                 <div>
                     <img src="src/img/biere.png" class="img-fluid" alt="biere" id="biere">
-                    <img src="src/img/biere-vide.png" class="img-fluid" alt="biere vide" id="biere-vide">
+                    <img src="src/img/biere-vide.png" class="img-fluid hidden" alt="biere vide" id="biere-vide">
                 </div>
         </div>
         <div class="tableBasse2">
@@ -47,8 +47,12 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
             </div>
         </div>
     </article>
+    <div>
+        <p><audio src="src/beer.mp3" controls id="player"></audio></p>
+    </div>
 
 </section>
+
 
 <section class="container" id="corona">
     <div class="row">

@@ -9,6 +9,7 @@ if (day == "1") {
     $("#coronaclose").click(function(){
         $("#corona").hide();
     })
+    $("#telecommande").addClass("selected");
     $('#telecommande').click(function () {
         $('#salon').animate({
             opacity: 0
@@ -17,7 +18,6 @@ if (day == "1") {
             location.href = 'tv.php';
         });
     });
-    $("#telecommande").addClass("selected");
 }
 
 if (day == "2") {
@@ -27,6 +27,7 @@ if (day == "2") {
     $("#telecommande").removeClass("selected");
     $("#biere").addClass("selected");
     $('#biere').click(function () {
+        $("#player")[0].play();
         $('#salon').animate({
             opacity: 0
         }, 1000,function() {
@@ -40,6 +41,8 @@ if (day == "2") {
     $("#salon").addClass("jour");
     $("#biere").removeClass("selected");
     $("#journal").addClass("selected");
+    $("#biere").toggleClass("hidden");
+    $("#biere-vide").toggleClass("hidden");
     $('#journal').click(function () {
         $('#salon').animate({
             opacity: 0
@@ -50,6 +53,8 @@ if (day == "2") {
     });
 } else if (day=="4") {
     $("#corona").hide();
+    $("#biere").toggleClass("hidden");
+    $("#biere-vide").toggleClass("hidden");
     $("#journal").removeClass("selected");
 }
 
