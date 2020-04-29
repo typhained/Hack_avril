@@ -7,23 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="src/css/tv.css">
     <title>tv</title>
 </head>
-
 <body>
-
-<h1>Watching Tv</h1>
-
-<section class="telecommande">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-            </div>
-        </div>
+    <section>
+    <img src="src/img/tv.svg" alt="" />
+    <div id="bloc-tv">
+        <iframe src="https://www.youtube.com/embed/JGuWb_81als"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <a href="index.php"><button>Retour</button></a>
-</section>
+    <p id="tv-off"></p>
+    <!--    <a href="index.php"><button>Retour</button></a> -->
+    </section>
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
