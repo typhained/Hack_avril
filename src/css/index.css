@@ -1,0 +1,33 @@
+/* Css de la page index */
+
+body {
+
+}
+section{
+    background-image: url("../img/salon-jour.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -250px;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+.table-size{
+    height: 120%;
+    width: 120%;
+}
+/*  Table de gauche */
+
+.tableBasse1 .table-size{
+    padding: 0 50px;
+}
+
+/* Table de droite */
+.tableBasse2 .table-size{
+    padding: 0 120px 0 0;
+}
