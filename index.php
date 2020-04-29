@@ -1,3 +1,8 @@
+<?php
+require_once 'ApiClass.php';
+$cam = new WindyApi('J8lrm1QEzevtGO5nLI9OuJUvzkZZ7SQp');
+$camResult = $cam->getCityCam(43.17,5.6,20);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +13,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="src/css/index.css">
     <title>Salon</title>
 </head>
@@ -44,6 +50,14 @@
 
 </section>
 
+<section class="container">
+    <div class="row">
+
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" src="..."></iframe>
+        </div>
+    </div>
+</section>
 
 
 <!-- Optional JavaScript -->
@@ -59,3 +73,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
