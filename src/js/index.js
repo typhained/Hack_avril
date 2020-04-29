@@ -27,6 +27,7 @@ if (day == "2") {
     $("#telecommande").removeClass("selected");
     $("#biere").addClass("selected");
     $('#biere').click(function () {
+        $("#player")[0].play();
         $('#salon').animate({
             opacity: 0
         }, 1000,function() {

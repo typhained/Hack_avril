@@ -47,8 +47,12 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
             </div>
         </div>
     </article>
+    <div>
+        <p><audio src="src/beer.mp3" controls id="player"></audio></p>
+    </div>
 
 </section>
+
 
 <section class="container" id="corona">
     <div class="row">
