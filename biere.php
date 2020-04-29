@@ -10,27 +10,20 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-php -S local
-    <title>Higgs</title>
+    <link rel="stylesheet" href="src/css/biere.css">
+    <title>Biere</title>
 </head>
 <body>
-
-<!--<section class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="embed-responsive embed-responsive-1by1">-->
-<!--            <iframe class="embed-responsive-item" src="..."></iframe>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<section class="container">
-    <div class="row">
-        <div class="col">
-            narration
-        </div>
+    <img src="src/img/brume.png" id="brume" />
+    <div id="over-brume">
+        <article>
+            <p id="nara-biere">Ici pour la naration</p>
+        </article>
+        <article>
+            <iframe src="https://www.youtube.com/embed/JGuWb_81als"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        <a href="index.php"><button>Retour</button></a>
     </div>
-    <a href="index.php"><button>Retour</button></a>
-</section>
-
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
