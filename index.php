@@ -38,8 +38,9 @@
 
 <section class="container">
     <div class="row">
-        <div class="col">
-            ici tv
+
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" src="..."></iframe>
         </div>
     </div>
 </section>
@@ -51,7 +52,6 @@
         </div>
     </div>
 </section>
-
 
 
 <!-- Optional JavaScript -->
