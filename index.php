@@ -18,7 +18,7 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
 <body>
 <section id="salon" class="jour">
         <article>
-            <p id="nara-index">Ici pour la naration</p>
+            <p id="nara-index">"Voyons voir ce qu'il y a télé !"</p>
         </article>
 
     <div class="col" id="tv">

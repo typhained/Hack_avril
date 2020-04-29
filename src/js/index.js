@@ -1,5 +1,6 @@
 //locale -> jour
 let day = localStorage.getItem('day');
+var timeout;
 if (localStorage.getItem('day') == null) {
     day = "1";
 }
@@ -10,6 +11,16 @@ if (day == "1") {
         $("#corona").hide();
     })
     $("#telecommande").addClass("selected");
+
+    window.setTimeout(function () {
+        $("#nara-index").html('test');
+    }, 3000);
+
+    window.setTimeout(function () {
+        $("#nara-index").html('retest');
+    }, 6000);
+
+
     $('#telecommande').click(function () {
         $('#salon').animate({
             opacity: 0
