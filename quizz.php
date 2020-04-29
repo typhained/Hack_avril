@@ -6,7 +6,7 @@ $photo1 = $cam->getPhoto(61.61,37.04,245);
 $photo2 = $cam->getPhoto(49.372,7.251,7);
 $photo3 = $cam->getPhoto(38.462,-10.767,5);
 $photo4 = $cam->getPhoto(46.966,8.480,10);
-$photo5 = $cam->getPhoto(46.934,7.046,10);
+$photo5 = $cam->getPhoto(1368909881);
 
 ?>
 

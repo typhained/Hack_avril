@@ -21,6 +21,7 @@ class WindyApi
             foreach ($data['result']['webcams'] as $cam) {
                 $results = [
                     'camId' => $cam['id'],
+                    'camImage' => $cam['image']['preview'],
                     'camTitle' => $cam['title'],
                     'camEmbed'=> $cam['player']['day']['embed'],
                     'camLink' => $cam['player']['day']['link']
