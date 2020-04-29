@@ -16,10 +16,11 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <title>Salon</title>
 </head>
 <body>
-<section>
+<section id="salon" class="jour">
         <article>
             <p id="nara-index">Ici pour la naration</p>
         </article>
+
     <div class="col" id="tv">
         <p>ici tv</p>
     </div>
@@ -31,37 +32,35 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
                 </div>
                 <div>
                     <img src="src/img/biere.png" class="img-fluid" alt="biere" id="biere">
-                   <img src="src/img/biere-vide.png" class="img-fluid" alt="biere vide" id="biere-vide">
+                    <img src="src/img/biere-vide.png" class="img-fluid hidden" alt="biere vide" id="biere-vide">
                 </div>
         </div>
         <div class="tableBasse2">
                 <img class="table-size" src="src/img/table.png" alt="table droite" />
-               <div>
-                     <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal">
+                <div>
+                    <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal">
                 </div>
+            </div>
         </div>
     </article>
-</section>
-<section class="container">
-    <div class="row">
-        <div class="embed-responsive embed-responsive-1by1">
-            <iframe class="embed-responsive-item" src="..."></iframe>
-        </div>
+    <div>
+        <p><audio src="src/beer.mp3" controls id="player"></audio></p>
     </div>
 </section>
-
-
+<section class="container" id="corona">
+    <div class="row">
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" src=""></iframe>
+        </div>
+        <button id="coronaclose">Close</button>
+    </div>
+</section>
+</body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+<script src="src/js/index.js"></script>
 </html>
 
