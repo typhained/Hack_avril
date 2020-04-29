@@ -38,6 +38,7 @@
 
 <section class="container">
     <div class="row">
+
         <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item" src="..."></iframe>
         </div>
@@ -51,11 +52,6 @@
         </div>
     </div>
 </section>
-
-<section class="container"></section>
-
-
-
 
 
 <!-- Optional JavaScript -->
