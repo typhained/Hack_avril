@@ -9,50 +9,41 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="src/css/index.css">
     <title>Salon</title>
 </head>
 <body>
 <section>
-    <div class="row">
-    <div class="col">
-        <p>ici naration</p>
-    </div>
-</div>
+        <article>
+            <p id="nara-index">Ici pour la naration</p>
+        </article>
     <div class="col" id="tv">
         <p>ici tv</p>
     </div>
     <article>
         <div class="tableBasse1">
                 <img class="table-size" src="src/img/table.png" alt="table gauche" />
-               <!-- <div>
-                    <a href="tv.php"> <img src="src/img/telecommande.png" class="img-fluid" alt="telecommande" id="telecommande"></a>
+                <div>
+                    <img src="src/img/telecommande.png" class="img-fluid" alt="telecommande" id="telecommande">
                 </div>
                 <div>
-                    <a href="biere.php"> <img src="src/img/biere.png" class="img-fluid" alt="biere" id="biere"></a>
-                    <img src="src/img/biere-vide.png" class="img-fluid" alt="biere vide" id="biere-vide">
-                </div> -->
+                    <img src="src/img/biere.png" class="img-fluid" alt="biere" id="biere">
+                   <img src="src/img/biere-vide.png" class="img-fluid" alt="biere vide" id="biere-vide">
+                </div>
         </div>
         <div class="tableBasse2">
-            <div>
                 <img class="table-size" src="src/img/table.png" alt="table droite" />
-               <!-- <div>
-                    <a href="journal.php"> <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal"></a>
-                </div> -->
-            </div>
+               <div>
+                     <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal">
+                </div>
         </div>
     </article>
-
 </section>
-
 <section class="container">
     <div class="row">
-
         <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item" src="..."></iframe>
         </div>
