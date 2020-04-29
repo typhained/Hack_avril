@@ -16,13 +16,14 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <title>Salon</title>
 </head>
 <body>
+
 <section id="salon" class="jour">
         <article>
-            <p id="nara-index">"Voyons voir ce qu'il y a télé !"</p>
+            <p id="nara-index">Voyons voir ce qu'il y a télé ce soir!</p>
         </article>
 
     <div class="col" id="tv">
-        <p>ici tv</p>
+        <p></p>
     </div>
     <article>
         <div class="tableBasse1">
@@ -55,6 +56,8 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
         <button id="coronaclose">Close</button>
     </div>
 </section>
+<div id="end">THE END</div>
+
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

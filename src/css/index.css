@@ -38,8 +38,17 @@ article:first-of-type{
     background-color: #1f2931;
     color: white;
     width: 50%;
+    font-size: 20px;
 }
 
+#end {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    font-size: xxx-large;
+}
 
 #tv {
     background-color: #1f2931;
