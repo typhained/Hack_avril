@@ -18,7 +18,7 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <title>Salon</title>
 </head>
 <body>
-<section>
+<section id="salon" class="jour">
     <div class="row">
     <div class="col">
         <p>ici naration</p>
@@ -30,20 +30,20 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <article>
         <div class="tableBasse1">
                 <img class="table-size" src="src/img/table.png" alt="table gauche" />
-               <!-- <div>
+               <div>
                     <a href="tv.php"> <img src="src/img/telecommande.png" class="img-fluid" alt="telecommande" id="telecommande"></a>
                 </div>
                 <div>
                     <a href="biere.php"> <img src="src/img/biere.png" class="img-fluid" alt="biere" id="biere"></a>
                     <img src="src/img/biere-vide.png" class="img-fluid" alt="biere vide" id="biere-vide">
-                </div> -->
+                </div>
         </div>
         <div class="tableBasse2">
             <div>
                 <img class="table-size" src="src/img/table.png" alt="table droite" />
-               <!-- <div>
+                <div>
                     <a href="journal.php"> <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal"></a>
-                </div> -->
+                </div>
             </div>
         </div>
     </article>
