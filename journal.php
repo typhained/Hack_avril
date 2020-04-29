@@ -13,7 +13,7 @@
 <section class="container">
     <h1>Que dit le journal</h1>
     <div class="row">
-        <div class="col">Que dit la meteo</div>
+        <div class="col"></div>
     </div>
     <div class="col">
         <div class="raw">Ici Votre Quiz !</div>
