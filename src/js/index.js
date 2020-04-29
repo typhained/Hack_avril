@@ -3,6 +3,13 @@ let day = localStorage.getItem('day');
 if (localStorage.getItem('day') == null) {
     day = "1";
 }
+$("#zero").click(function(){
+    let day = "1";
+    localStorage.setItem("day", day);
+    location.href = 'index.php';
+})
+
+
 
 // verif du jour
 if (day == "1") {
@@ -35,6 +42,7 @@ if (day == "2") {
             location.href = 'biere.php';
         });
     });
+
 } else if (day == "3") {
     $("#corona").hide();
     $("#salon").removeClass("nuit");

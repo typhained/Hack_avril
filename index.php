@@ -17,6 +17,7 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
 </head>
 <body>
 <section id="salon" class="jour">
+    <button id="zero">Remise à zero</button>
         <article>
             <p id="nara-index">Ici pour la naration</p>
         </article>
