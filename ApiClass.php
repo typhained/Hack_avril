@@ -3,7 +3,6 @@
 class WindyApi
 {
     private $apiKeyCam = 'J8lrm1QEzevtGO5nLI9OuJUvzkZZ7SQp';
-    private $apiForecastWeather = '4auH99ROERTFikux10raQfDwFL5frFg5';
 
 
     public function getCityCam($latitude,$longitude,$perim): ?array
@@ -34,7 +33,7 @@ class WindyApi
     public function getWeather($latitude,$longitude,$perim) : ?array
     {
 
-        $curl = curl_init("https://api.windy.com/api/webcams/v2/list/nearby=" . $latitude . ',' . $longitude . ',' . $perim . "/limit=20?show=webcams:player,image&key=" . $this->apiKey);
+        $curl = curl_init("https://api.windy.com/api/webcams/v2/list/nearby=" . $latitude . ',' . $longitude . ',' . $perim . "/limit=20?show=webcams:player,image&key=" . $this->apiKeyCam);
         curl_setopt_array($curl, [
             CURLOPT_RETURNTRANSFER => true,
 
@@ -60,7 +59,7 @@ class WindyApi
 
     public function getPhoto($latitude,$longitude,$perim): ?array
     {
-        $curl = curl_init("https://api.windy.com/api/webcams/v2/list/nearby=" . $latitude . ',' . $longitude . ',' . $perim . "/limit=20?show=webcams:player,image&key=" . $this->apiKey);
+        $curl = curl_init("https://api.windy.com/api/webcams/v2/list/nearby=" . $latitude . ',' . $longitude . ',' . $perim . "/limit=20?show=webcams:player,image&key=" . $this->apiKeyCam);
         curl_setopt_array($curl, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 1
