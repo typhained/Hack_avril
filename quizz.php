@@ -1,10 +1,18 @@
+<?php
+
+require_once 'ApiClass.php';
+//$photo1 = $cam->getPhoto(61.617,37.046,5);
+//$photo2 = $cam->getPhoto(49.372,7.251,7);
+?>
+
 <h2>Question n°1</h2>
 <form action="validate.php" id="quest1" method="post">
-    Ce monument est au Kazakhstan ? :
+    Ce monument est il au Kazakhstan ? :
     <input type="submit" name="choice" value="Vrai">
     <input type="submit" name="choice" value="Faux"><br>
-    <!-- https://www.windy.com/fr/-Webcams/Russie/Oblast-d%27Arkhangelsk/Arkhangelsk/%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA-%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/webcams/1521788187?61.617,37.046,5 -->
-    <!-- Réponse choice2 -->
+    <img src="<?php echo $photo1['image']?>">
+    <!-- 61.617,37.046,5 -->
+    <!-- Réponse FAUX -->
 </form>
 
 <h2>Question n°2</h2>
@@ -12,8 +20,9 @@
     Nous sommes en France ? :
     <input type="submit" name="choice2" value="Vrai">
     <input type="submit" name="choice2" value="Faux"><br>
-    <!-- -->
-    <!-- -->
+    <img src="<?php echo $photo2['image']?>">
+    <!-- 49.372,7.251,7 -->
+    <!-- Réponse FAUX -->
 </form>
 
 <h2>Question n°3</h2>
@@ -21,8 +30,8 @@
     Dans quel pays sommes nous ? :
     <input type="submit" name="choice3" value="Vrai">
     <input type="submit" name="choice3" value="Faux"><br>
-    <!-- https://www.windy.com/fr/-Webcams/Espagne/Castille-et-Le%C3%B3n/Le%C3%B3n/Catedral-de/webcams/1390070107?38.462,-10.767,5 -->
-    <!-- Réponse choice6 -->
+    <!-- 38.462,-10.767,5 -->
+    <!-- Réponse FAUX -->
 </form>
 
 <h2>Question n°4</h2>
