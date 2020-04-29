@@ -16,26 +16,39 @@
 
 <section class="container">
     <div class="row">
+
         <div class="tableBasse1">
             <div>
-                <a> <img src="..." class="img-fluid" href="tv.html" alt="telecommande"></a>
+                <a> <img src="..." href="tv.html" class="img-fluid" alt="telecommande"></a>
             </div>
             <div>
-                <a> <img src="..." class="img-fluid" href="biere.html" alt="biere"></a>
+                <a> <img src="..." href="biere.html" class="img-fluid" alt="biere"></a>
             </div>
         </div>
+
         <div class="tableBasse2">
             <div>
-                <a> <img src="..." class="img-fluid" href="journal.html" alt="journal"></a>
+                <a> <img src="..." href="journal.html" class="img-fluid" alt="journal"></a>
             </div>
         </div>
+
     </div>
 </section>
 
 
 <section class="container">
     <div class="row">
+        <div class="col">
+            ici tv
+        </div>
+    </div>
+</section>
 
+<section class="container">
+    <div class="row">
+        <div class="col">
+            ici naration
+        </div>
     </div>
 </section>
 
