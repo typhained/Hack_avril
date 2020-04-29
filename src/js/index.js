@@ -2,7 +2,8 @@
 let day = localStorage.getItem('day');
 var timeout;
 if (localStorage.getItem('day') == null) {
-    day = "1";
+    let day = "1";
+    localStorage.setItem("day", day);
 }
 
 // verif du jour
@@ -10,14 +11,28 @@ if (day == "1") {
     $("#telecommande").addClass("selected");
 
     // fade In de la video
-    // fade Out de la video
+    window.setTimeout(function () {
+        $("#corona").animate({opacity : 1}, 1000)
+    }, 3000);
 
+    // fade Out de la video
+    window.setTimeout(function () {
+        $("#corona").animate({opacity : 0}, 1000)
+    }, 10000);
+
+    window.setTimeout(function () {
+        $('#yt').attr('src', '');
+        }, 10000);
 
     //vidéo finie
-    $("#coronaclose").click(function(){
-        $("#corona").hide();
+
+    window.setTimeout(function () {
+        $("#corona").css("z-index", -200);
+    }, 10050);
+
+    window.setTimeout(function () {
         $("#nara-index").html('On ne parle plus que de ce Covid19, ça commence à me faire chier!');
-    })
+    }, 10050);
 
 
     window.setTimeout(function () {
@@ -83,5 +98,7 @@ if (day == "2") {
     window.setTimeout(function () {
         $("#end").animate({opacity : 1}, 1000)
     }, 6000);
+    let day = "1";
+    localStorage.setItem("day", day);
 }
 
