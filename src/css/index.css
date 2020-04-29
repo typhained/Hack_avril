@@ -16,6 +16,7 @@ body {
 }
 
 /* fond nuit */
+
 .nuit {
     background-image: url("/src/img/salon-nuit.jpg");
     background-size: cover;

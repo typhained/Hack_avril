@@ -4,8 +4,11 @@ if (localStorage.getItem('day') == null) {
     day = "1";
 }
 
-// jour 1
+// verif du jour
 if (day == "1") {
+    $("#coronaclose").click(function(){
+        $("#corona").hide();
+    })
     $('#telecommande').click(function () {
         $('#salon').animate({
             opacity: 0
@@ -18,6 +21,7 @@ if (day == "1") {
 }
 
 if (day == "2") {
+    $("#corona").hide();
     $("#salon").removeClass("jour");
     $("#salon").addClass("nuit");
     $("#telecommande").removeClass("selected");
@@ -31,6 +35,7 @@ if (day == "2") {
         });
     });
 } else if (day == "3") {
+    $("#corona").hide();
     $("#salon").removeClass("nuit");
     $("#salon").addClass("jour");
     $("#biere").removeClass("selected");
@@ -44,6 +49,7 @@ if (day == "2") {
         });
     });
 } else if (day=="4") {
+    $("#corona").hide();
     $("#journal").removeClass("selected");
 }
 
