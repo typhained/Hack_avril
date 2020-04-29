@@ -4,22 +4,25 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Lire le journal</title>
+    <title>tv</title>
 </head>
+
 <body>
 
-<section class="container">
-    <h1>Que dit le journal</h1>
-    <div class="row">
-        <div class="col">Que dit la meteo</div>
-    </div>
-    <div class="col">
-        <div class="raw">Ici Votre Quiz !</div>
+<h1>Watching Tv</h1>
+
+<section class="telecommande">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
     </div>
 </section>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

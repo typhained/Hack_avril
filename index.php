@@ -1,10 +1,8 @@
-
 <?php
 require_once 'ApiClass.php';
 $cam = new WindyApi('J8lrm1QEzevtGO5nLI9OuJUvzkZZ7SQp');
 $camResult = $cam->getCityCam(43.17,5.6,20);
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,46 +14,47 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="src/css/index.css">
     <title>Salon</title>
 </head>
 <body>
-<h1>Chilling on sofa</h1>
-
-<section class="container">
+<section>
     <div class="row">
-
+    <div class="col">
+        <p>ici naration</p>
+    </div>
+</div>
+    <div class="col" id="tv">
+        <p>ici tv</p>
+    </div>
+    <article>
         <div class="tableBasse1">
-            <div>
-                <a> <img src="..." href="tv.html" class="img-fluid" alt="telecommande"></a>
-            </div>
-            <div>
-                <a> <img src="..." href="biere.html" class="img-fluid" alt="biere"></a>
-            </div>
+                <img class="table-size" src="src/img/table.png" alt="table gauche" />
+               <!-- <div>
+                    <a href="tv.php"> <img src="src/img/telecommande.png" class="img-fluid" alt="telecommande" id="telecommande"></a>
+                </div>
+                <div>
+                    <a href="biere.php"> <img src="src/img/biere.png" class="img-fluid" alt="biere" id="biere"></a>
+                    <img src="src/img/biere-vide.png" class="img-fluid" alt="biere vide" id="biere-vide">
+                </div> -->
         </div>
-
         <div class="tableBasse2">
             <div>
-                <a> <img src="..." href="journal.html" class="img-fluid" alt="journal"></a>
+                <img class="table-size" src="src/img/table.png" alt="table droite" />
+               <!-- <div>
+                    <a href="journal.php"> <img src="src/img/journal.png" class="img-fluid" alt="journal" id="journal"></a>
+                </div> -->
             </div>
         </div>
+    </article>
 
-    </div>
 </section>
-
 
 <section class="container">
     <div class="row">
 
         <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item" src="..."></iframe>
-        </div>
-    </div>
-</section>
-
-<section class="container">
-    <div class="row">
-        <div class="col">
-            ici naration
         </div>
     </div>
 </section>
@@ -74,3 +73,4 @@ $camResult = $cam->getCityCam(43.17,5.6,20);
         crossorigin="anonymous"></script>
 </body>
 </html>
+
