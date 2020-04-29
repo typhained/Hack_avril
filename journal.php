@@ -18,6 +18,8 @@
     <div class="col">
         <div class="raw">Ici Votre Quiz !</div>
     </div>
+    <a href="index.php"><button>Retour</button></a>
+
 </section>
 
 

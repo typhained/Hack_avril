@@ -22,6 +22,7 @@
             </div>
         </div>
     </div>
+    <a href="index.php"><button>Retour</button></a>
 </section>
 </body>
 <!-- Optional JavaScript -->
