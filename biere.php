@@ -25,14 +25,12 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
 </head>
 <body>
     <img src="src/img/brume.png" id="brume" />
+    <article>
+        <p id="nara-biere"><?=$camResult1['camTitle']?> était tellement beau!</p>
+    </article>
     <div id="over-brume">
-        <article>
-            <p id="nara-biere"><?=$camResult1['camTitle']?> était tellement beau!</p>
-        </article>
             <iframe id='frame' src="<?=$camResult1['camEmbed']?>?autoplay=1&showinfo=0"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
         </article>
-
-        <a href="index.php"><button>Retour</button></a>
     </div>
 </body>
 <!-- Optional JavaScript -->
