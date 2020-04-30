@@ -1,12 +1,12 @@
 <?php
 require_once 'ApiClass.php';
 $cam = new WindyApi('J8lrm1QEzevtGO5nLI9OuJUvzkZZ7SQp');
-$camResult1 = $cam->getCityCam(43.382,5.075,10);
-$camResult2 = $cam->getCityCam(36.558,137.997,8);
-$camResult3 = $cam->getCityCam(64.720,-22.769,50);
-$camResult4 = $cam->getCityCam(60.213,16.754,136);
+$camResult1 = $cam->getCityCam(43.241,6.356,51);
+$camResult2 = $cam->getCityCam(54.000,-10.236,11);
+$camResult4 = $cam->getCityCam(65.710,-18.884,50);
+$camResult3 = $cam->getCityCam(69.985,22.953,800);
 //$camResult5 = $cam->getCityCam(-7.504,31.333,16);
-$camResult6 = $cam->getCityCam(47.42,-139.83,4);
+$camResult6 = $cam->getCityCam(25.292,55.471,90);
 $camResult7 = $cam->getCityCam(50.534,1.612,19);
 $camResult8 = $cam->getCityCam(50.422,1.537,18);
 $camResult9 = $cam->getCityCam(28.758,111.160,156);
@@ -28,7 +28,7 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     <img id="flash" src="src/img/flash.png">
     <img src="src/img/brume.png" id="brume" />
     <article>
-        <p id="nara-biere"><?=$camResult1['camTitle']?> était tellement beau!</p>
+        <p id="nara-biere">C'était si beau à <?=$camResult1['camTitle']?> !</p>
     </article>
     <div id="over-brume">
             <iframe id='frame' src="<?=$camResult1['camEmbed']?>?autoplay=1&showinfo=0"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>
@@ -50,16 +50,16 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
         $('#frame').attr('src', '<?=$camResult2['camEmbed']?>?autoplay=1&showinfo=0');
     }, 6000);
     window.setTimeout(function () {
-       $('#nara-biere').html("Une vue à couper le souffle!")
-    }, 6000);
+       $('#nara-biere').html("Une vue à couper le souffle à <?=$camResult2['camTitle']?>!")
+    }, 6010);
 
 //cam3
     window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult3['camEmbed']?>?autoplay=1&showinfo=0');
     }, 12000);
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult3['camTitle'] ?> est époustouflant")
-    }, 12000);
+        $('#nara-biere').html("<?=$camResult3['camTitle'] ?> était époustouflant")
+    }, 12010);
 
 //cam4
     window.setTimeout(function () {
@@ -67,7 +67,7 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     }, 18000);
     window.setTimeout(function () {
         $('#nara-biere').html("A <?=$camResult4['camTitle']?>, il faisait trop froid!")
-    }, 18000);
+    }, 18010);
 
 //cam7
     window.setTimeout(function () {
@@ -75,15 +75,15 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     }, 24000);
     window.setTimeout(function () {
         $('#nara-biere').html("<?=$camResult7['camTitle']?>")
-    }, 24000);
+    }, 24010);
 
 //cam8
     window.setTimeout(function () {
-        $('#frame').attr('src', '<?=$camResult8['camEmbed']?>?autoplay=1&showinfo=0');
+        $('#frame').attr('src', '<?=$camResult10['camEmbed']?>?autoplay=1&showinfo=0');
     }, 30000);
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult8['camTitle']?> !")
-    }, 30000);
+        $('#nara-biere').html("Je me souviens de <?=$camResult10['camTitle']?> comme si c'était hier!")
+    }, 30010);
 
 //cam9
     window.setTimeout(function () {
@@ -91,15 +91,15 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     }, 36000);
     window.setTimeout(function () {
         $('#nara-biere').html("<?=$camResult9['camTitle']?> avait un paysage ahurissant!")
-    }, 36000);
+    }, 36010);
 
 //cam10
     window.setTimeout(function () {
-        $('#frame').attr('src', '<?=$camResult10['camEmbed']?>?autoplay=1&showinfo=0');
+        $('#frame').attr('src', '<?=$camResult8['camEmbed']?>?autoplay=1&showinfo=0');
     }, 42000);
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult10['camTitle']?>  pas de beau temps mais de la bonne binouse")
-    }, 42000);
+        $('#nara-biere').html("<?=$camResult8['camTitle']?>, pas de beau temps mais de la bonne binouse.")
+    }, 42010);
     window.setTimeout(function () {
         $('#flash').fadeIn(2000);
     }, 48000);
@@ -108,4 +108,22 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
         location.href = 'index.php';
     }, 50000);
 </script>
+<?php
+var_dump($camResult1);
+var_dump($camResult2);
+
+var_dump($camResult3);
+
+var_dump($camResult4);
+
+var_dump($camResult9);
+
+var_dump($camResult6);
+var_dump($camResult7);
+
+var_dump($camResult8);
+var_dump($camResult10);
+
+
+?>
 </html>

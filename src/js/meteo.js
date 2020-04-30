@@ -7,7 +7,7 @@ const options = {
 
     // Optional: Initial state of the map
     lat: 48.58,
-    lon: 7.75i,
+    lon: 7.75,
     zoom: 5,
 };
 
