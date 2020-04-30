@@ -118,7 +118,7 @@ $("#good6,#bad6").click(function() {
 
 $("#good7,#bad7").click(function() {
     var id = $(this).attr('id');
-    if (id === "good"){
+    if (id === "good7"){
         $(this).addClass('good');
     } else {
         $(this).addClass('bad');
@@ -137,7 +137,7 @@ $("#good7,#bad7").click(function() {
 
 $("#good8,#bad8").click(function() {
     var id = $(this).attr('id');
-    if (id === "good"){
+    if (id === "good8"){
         $(this).addClass('good');
     } else {
         $(this).addClass('bad');

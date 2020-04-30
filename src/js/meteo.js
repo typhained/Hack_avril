@@ -6,8 +6,9 @@ const options = {
     verbose: true,
 
     // Optional: Initial state of the map
-    lat: 48.35,
-    lon: 7.44,
+
+    lat: 48.58,
+    lon: 7.75,
     zoom: 5,
 };
 
@@ -41,3 +42,5 @@ windyInit(options, windyAPI => {
         // Opening of a picker (async)
     });
 });
+
+
