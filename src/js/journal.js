@@ -10,9 +10,11 @@ $("#good,#bad").click(function() {
         $(this).addClass('bad');
     }
     $("#good,#bad").prop('disabled', true);
-
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
-        function() {
+        function() {;
             $("#question1").toggleClass("caché");
             $("#question2").toggleClass("caché");
         },
@@ -27,6 +29,9 @@ $("#good2,#bad2").click(function() {
         $(this).addClass('bad');
     }
     $("#good2,#bad2").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
         function() {
             $("#question2").toggleClass("caché");
@@ -43,6 +48,9 @@ $("#good3,#bad3").click(function() {
         $(this).addClass('bad');
     }
     $("#good3,#bad3").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
         function() {
             $("#question3").toggleClass("caché");
@@ -59,6 +67,9 @@ $("#good4,#bad4").click(function() {
         $(this).addClass('bad');
     }
     $("#good4,#bad4").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 500);
     setTimeout(
         function() {
             $("#question4").toggleClass("caché");
@@ -75,6 +86,9 @@ $("#good5,#bad5").click(function() {
         $(this).addClass('bad');
     }
     $("#good5,#bad5").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
         function() {
             $("#question5").toggleClass("caché");
@@ -91,6 +105,9 @@ $("#good6,#bad6").click(function() {
         $(this).addClass('bad');
     }
     $("#good6,#bad6").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
         function() {
             $("#question6").toggleClass("caché");
@@ -107,6 +124,9 @@ $("#good7,#bad7").click(function() {
         $(this).addClass('bad');
     }
     $("#good7,#bad7").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
         function() {
             $("#question7").toggleClass("caché");
@@ -123,6 +143,9 @@ $("#good8,#bad8").click(function() {
         $(this).addClass('bad');
     }
     $("#good8,#bad8").prop('disabled', true);
+    setTimeout( function() {
+        $("#player")[0].play();
+    }, 1000);
     setTimeout(
         function() {
             $("#question8").toggleClass("caché");

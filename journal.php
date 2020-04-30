@@ -16,6 +16,8 @@ require_once 'ApiClass.php';
     <div class="row">
         <?php require 'validate.php'; ?>
     </div>
+    <p><audio class="caché" src="src/journal-page.mp3" controls id="player"></audio></p>
+
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
