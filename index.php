@@ -16,7 +16,7 @@
 <section id="salon" class="jour">
     <img class="hidden" id="flash" src="src/img/flash.png">
     <article>
-            <p id="nara-index">Voyons voir ce qu'il y a à la télé ce soir!</p>
+            <p id="nara-index">Voyons voir ce qu'il y a à la télé aujourd'hui...</p>
     </article>
 
     <div  class="col" id="tv">
