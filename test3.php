@@ -1,26 +1,30 @@
 <?php
 require_once 'ApiClass.php';
-?>
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Lire le journal</title>
-</head>
-<body>
-<div id="windy"></div>
-
-
-</body>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-<script src="src/js/journal.js"></script>
-</html>
+$cam = new WindyApi();
+$result = $cam->getweather(48.58,7.75);
+echo $result['0'];
+echo $result['1']. '<br>';
+$photo1 = $cam->getweather(64.68,97.74);
+$photo2 = $cam->getweather(48.85,2.35);
+$photo3 = $cam->getWeather(25.34,51.52);
+$photo4 = $cam->getweather(41.91,12.48);
+$photo5 = $cam->getweather(31.26,121.47);
+$photo6 = $cam->getweather(64.13,-21.94);
+$photo7 = $cam->getweather(-1.29,36.81);
+$photo8 = $cam->getweather(46.21,-63.26);
+echo $photo1['0'];
+echo $photo1['1']. '<br>';
+echo $photo2['0'];
+echo $photo2['1']. '<br>';
+echo $photo3['0'];
+echo $photo3['1']. '<br>';
+echo $photo4['0'];
+echo $photo4['1']. '<br>';
+echo $photo5['0'];
+echo $photo5['1']. '<br>';
+echo $photo6['0'];
+echo $photo6['1']. '<br>';
+echo $photo7['0'];
+echo $photo7['1']. '<br>';
+echo $photo8['0'];
+echo $photo8['1']. '<br>';
