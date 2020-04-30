@@ -2,7 +2,7 @@
 require 'quizz.php';
 
 if(isset($_POST['choice'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = 'Russie';
     if($bonneReponse == $_POST['choice']){
             echo 'Bonne reponse';
     }else{
@@ -10,7 +10,7 @@ if(isset($_POST['choice'])) {
     }
 }
 if(isset($_POST['choice2'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = 'Vrai';
     if($bonneReponse == $_POST['choice2']){
         echo 'Bonne reponse';
     }else{
@@ -26,7 +26,7 @@ if(isset($_POST['choice3'])) {
     }
 }
 if(isset($_POST['choice4'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = '1667';
     if($bonneReponse == $_POST['choice4']){
         echo 'Bonne reponse';
     }else{
@@ -34,7 +34,7 @@ if(isset($_POST['choice4'])) {
     }
 }
 if(isset($_POST['choice5'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = '468m';
     if($bonneReponse == $_POST['choice5']){
         echo 'Bonne reponse';
     }else{
@@ -42,7 +42,7 @@ if(isset($_POST['choice5'])) {
     }
 }
 if(isset($_POST['choice6'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = 'Reykjavik';
     if($bonneReponse == $_POST['choice6']){
         echo 'Bonne reponse';
     }else{
@@ -50,7 +50,7 @@ if(isset($_POST['choice6'])) {
     }
 }
 if(isset($_POST['choice7'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = 'Nairobi';
     if($bonneReponse == $_POST['choice7']){
         echo 'Bonne reponse';
     }else{
@@ -58,7 +58,7 @@ if(isset($_POST['choice7'])) {
     }
 }
 if(isset($_POST['choice8'])) {
-    $bonneReponse = 'Faux';
+    $bonneReponse = 'Aéroport';
     if($bonneReponse == $_POST['choice8']){
         echo 'Bonne reponse';
     }else{
