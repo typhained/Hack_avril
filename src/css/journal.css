@@ -41,13 +41,28 @@ p {
     left:170px;
 }
 #confinement {
-    background-color: #1f2931;
+    background-color: gray;
     position: absolute;
     color: white;
     bottom: 94px;
-    left: 30%;
+    left: 20%;
     text-align: center;
-    width: 500px;
+    width: 800px;
+    text-transform: uppercase;
+}
+
+#confinement img {
+    width: 025vw;
+    position: relative;
+    top: 8px;
+    left: auto;
+    filter: invert(86%);
+    color: white;
+    padding-bottom: 25px;
+}
+
+#confinement h1 {
+    padding-top: 20px;
 }
 
 .good {
