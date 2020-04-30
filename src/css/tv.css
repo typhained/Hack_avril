@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+section{
+    text-align: center;
+}
+img {
+    width: 90%;
+    height: 90%;
+    z-index: 3;
+    position: relative;
+}
+#bloc-tv {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+}
+iframe{
+    height: 85vh;
+    width: 61vw;
+    margin: 6% 20% 0 0;
+}
+#tv-off{
+    position: absolute;
+    bottom: 257px;
+    right: 310px;
+    width: 40px;
+    height: 40px;
+}
