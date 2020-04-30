@@ -14,10 +14,10 @@
 <body>
 
 <section id="salon" class="jour">
-    <button id="zero">Remise à zero</button>
-        <article>
+    <img class="hidden" id="flash" src="src/img/flash.png">
+    <article>
             <p id="nara-index">Voyons voir ce qu'il y a à la télé ce soir!</p>
-        </article>
+    </article>
 
     <div  class="col" id="tv">
         <img class="hidden" src="src/img/BN.png">

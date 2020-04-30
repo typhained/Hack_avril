@@ -22,6 +22,7 @@ iframe{
     width: 80vw;
     margin: 0 10%;
 }
+
 article:first-of-type{
     display: flex;
     justify-content: center;
@@ -29,6 +30,7 @@ article:first-of-type{
     text-align: center;
     align-items: center;
 }
+
 #nara-biere {
     border-radius: 80px;
     padding-top: 5px;
@@ -39,4 +41,9 @@ article:first-of-type{
     position: absolute;
     top: 0;
     z-index: 4;
+}
+
+#flash {
+    position: absolute;
+    z-index: 200;
 }
