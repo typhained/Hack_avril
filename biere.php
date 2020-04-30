@@ -13,7 +13,6 @@ $camResult9 = $cam->getCityCam(28.758,111.160,156);
 $camResult10 = $cam->getCityCam(53.295,-9.547,57);
 
 ?>
-<?php var_dump($camResult10); ?>
 <!doctype html>
 <html lang="en">
 <head>
