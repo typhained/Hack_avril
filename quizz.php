@@ -82,3 +82,4 @@ $photo8 = $cam->getPhoto(1494830834);
     </div>
     <p class="caché">Le président Emmanuel Macron annonce la fin du confinement</p>
 
+</form>

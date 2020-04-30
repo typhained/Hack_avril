@@ -65,6 +65,7 @@ if (day == "2") {
     $("#nara-index").html('Encore ce foutu virus, j\'ai besoin d\'une biere !!!');
     $('#biere').click(function () {
         $("#player")[0].play();
+        $('#salon').addClass("blur");
         $('#salon').animate({
             opacity: 0
         }, 3000,function() {
@@ -74,13 +75,17 @@ if (day == "2") {
     });
 
 } else if (day == "3") {
+    $("body").css("background-color", "grey");
     $("#nara-index").html("Wah.. C'était quoi ces rêves bizarres?!");
     $("#corona").hide();
+    $("#flash").toggleClass("hidden");
+    $("#flash").fadeOut(2000);
     $("#salon").removeClass("nuit");
     $("#salon").addClass("jour");
     $("#biere").removeClass("selected");
     $("#journal").addClass("selected");
     $("#biere").toggleClass("hidden");
+    $("body").css("background-color", "black");
     $("#biere-vide").toggleClass("hidden");
     window.setTimeout(function () {
         $("#nara-index").html("On va lire un peu le journal...");
@@ -89,7 +94,6 @@ if (day == "2") {
         $('#salon').animate({
             opacity: 0
         }, 1000,function() {
-            //thing to do when you animation is finished e.g.
             location.href = 'journal.php';
         });
     });
@@ -97,9 +101,11 @@ if (day == "2") {
     $("#corona").hide();
     $("#biere").toggleClass("hidden");
     $("#biere-vide").toggleClass("hidden");
+
     $("#journal").removeClass("selected");
     $("#nara-index").html("C'est la fin du confinement!");
-    $("#tv p").html("BREAKING NEWS");
+    $("#tv img").removeClass("hidden");
+
     window.setTimeout(function () {
         $("#salon").fadeOut(1000);
     }, 5000);
@@ -109,4 +115,3 @@ if (day == "2") {
     let day = "1";
     localStorage.setItem("day", day);
 }
-
