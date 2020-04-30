@@ -59,6 +59,12 @@ article:first-of-type{
     top: 176px;
     right: 627px;
 }
+
+#tv img {
+    height: 180px;
+    width: auto;
+    opacity: 1;
+}
 article:nth-of-type(2){
      display: flex;
      justify-content: space-between;
