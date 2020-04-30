@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 require_once 'ApiClass.php';
 $cam = new WindyApi();
@@ -10,7 +10,6 @@ $photo5 = $cam->getPhoto(1368909881);
 $photo6 = $cam->getPhoto(1368909881);
 $photo7 = $cam->getPhoto(1368909881);
 $photo8 = $cam->getPhoto(1368909881);
-
 ?>
 
 <h2>Question n°1</h2>

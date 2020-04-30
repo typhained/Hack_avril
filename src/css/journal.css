@@ -1,0 +1,9 @@
+#img-bg {
+    background-image: url("../img/journal-open.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100vh;
+    position: relative;
+}
