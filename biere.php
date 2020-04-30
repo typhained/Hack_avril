@@ -110,5 +110,4 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
 
 </script>
 
-<?php var_dump($camResult7); ?>
 </html>
