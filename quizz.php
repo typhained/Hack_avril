@@ -2,11 +2,14 @@
 
 require_once 'ApiClass.php';
 $cam = new WindyApi();
-$photo1 = $cam->getPhoto(61.61,37.04,245);
-$photo2 = $cam->getPhoto(49.372,7.251,7);
-$photo3 = $cam->getPhoto(38.462,-10.767,5);
-$photo4 = $cam->getPhoto(46.966,8.480,10);
-$photo5 = $cam->getPhoto(46.934,7.046,10);
+$photo1 = $cam->getPhoto(1368909881);
+$photo2 = $cam->getPhoto(1368909881);
+$photo3 = $cam->getPhoto(1368909881);
+$photo4 = $cam->getPhoto(1584623106);
+$photo5 = $cam->getPhoto(1368909881);
+$photo6 = $cam->getPhoto(1368909881);
+$photo7 = $cam->getPhoto(1368909881);
+$photo8 = $cam->getPhoto(1368909881);
 
 ?>
 
@@ -63,7 +66,7 @@ $photo5 = $cam->getPhoto(46.934,7.046,10);
      ? :
     <input type="submit" name="choice6" value="Vrai">
     <input type="submit" name="choice6" value="Faux"><br>
-    <!-- -->
+    <img src="<?php echo $photo6['image']?>">
     <!-- -->
 </form>
 
@@ -72,7 +75,7 @@ $photo5 = $cam->getPhoto(46.934,7.046,10);
       ? :
     <input type="submit" name="choice7" value="Vrai">
     <input type="submit" name="choice7" value="Faux"><br>
-    <!-- -->
+    <img src="<?php echo $photo7['image']?>">
     <!-- -->
 </form>
 
@@ -81,7 +84,7 @@ $photo5 = $cam->getPhoto(46.934,7.046,10);
       ? :
     <input type="submit" name="choice8" value="Vrai">
     <input type="submit" name="choice8" value="Faux"><br>
-    <!-- -->
+    <img src="<?php echo $photo8['image']?>">
     <!-- -->
 </form>
 
