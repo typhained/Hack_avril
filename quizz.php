@@ -22,81 +22,81 @@ $temp8 = $cam->getweather(46.21,-63.26);
 ?>
     <div id="question1" class="">
         <img src="<?php echo $photo1['image']?>">
-        <form action="validate.php" id="quest1" method="post">
+        <div id="quest1">
             <legend>Question 1 : Ce monument est il au Kazakhstan ou en Russie ? (la température actuelle de ce lieu est de
             <?php echo $temp1;?>°C)</legend>
-            <input type="submit" name="choice" value="Kazakhstan">
-            <input type="submit" name="choice" value="Russie">
-        </form>
+            <button id="bad">Kazakhstan</button>
+            <button id="good">Russie</button>
+        </div>
     </div>
     <div id="question2" class="caché">
         <img src="<?php echo $photo2['image']?>">
-        <form action="validate.php" id="quest2" method="post">
+        <div id="quest2">
             <legend>Question 2 : Sommes nous en France ? (la température actuelle de ce lieu est de
                 <?php echo $temp2;?>°C)</legend>
-            <input type="submit" name="choice2" value="Vrai">
-            <input type="submit" name="choice2" value="Faux">
+            <button id="bad2">Faux</button>
+            <button id="good2">Vrai</button>
             <!-- 49.372,7.251,7 -->
             <!-- Réponse FAUX -->
-        </form>
+        </div>
     </div>
     <div id="question3" class="caché">
         <img src="<?php echo $photo3['image']?>">
-            <form action="validate.php" id="quest3" method="post">
+            <div id="quest3">
                 <legend>Question 3 : Sommes nous en Europe ? (la température actuelle de ce lieu est de
                     <?php echo $temp3;?>°C)</legend>
-                <input type="submit" name="choice3" value="Vrai">
-                <input type="submit" name="choice3" value="Faux">
+                <button id="good3">Faux</button>
+                <button id="bad3">Vrai</button>
                 <!-- 38.462,-10.767,5 -->
                 <!-- Réponse VRAI -->
-            </form>
+            </div>
     </div>
     <div id="question4" class="caché">
         <img src="<?php echo $photo4['image']?>">
-        <form action="validate.php" id="quest4" method="post">
+        <div id="quest4">
             <legend>Question 4 : En quelle année à été terminé la place St-Pierre ? (la température actuelle de ce lieu est de
                 <?php echo $temp4;?>°C)</legend>
-            <input type="submit" name="choice4" value="1667">
-            <input type="submit" name="choice4" value="1982">
+            <button id="good4">1667</button>
+            <button id="bad4">1982</button>
             <!-- Réponse VRAI -->
-        </form>
+        </div>
     </div>
     <div id="question5" class="caché">
         <img src="<?php echo $photo5['image']?>">
-        <form action="validate.php" id="quest5" method="post">
+        <div id="quest5">
             <legend>Question 5 : Combien mesure l'Oriental Pearl Tv Tower ? (la température actuelle de ce lieu est de
                 <?php echo $temp5;?>°C)</legend>
             <input type="submit" name="choice5" value="468m">
             <input type="submit" name="choice5" value="684m">
-        </form>
+            <button id="good5">468m</button>
+            <button id="bad5">Russie</button>
+        </div>
     </div>
     <div id="question6" class="caché">
         <img src="<?php echo $photo6['image']?>">
-        <form action="validate.php" id="quest6" method="post">
+        <div id="quest6">
             <legend>Question 6 : Comment s'orthographie correctement cette ville Islandaise ? (la température actuelle de ce lieu est de
                 <?php echo $temp6;?>°C)</legend>
-            <input type="submit" name="choice6" value="Rekyajvik">
-            <input type="submit" name="choice6" value="Reykjavik">
-        </form>
+            <button id="bad6">Rekyajvik</button>
+            <button id="good6">Reykjavik</button>
+        </div>
     </div>
     <div id="question7" class="caché">
         <img src="<?php echo $photo7['image']?>">
-        <form action="validate.php" id="quest7" method="post">
+        <div id="quest7">
             <legend>Question 7 : A quel personnage de la serie La Casa de Papel, cette ville à prêtée son nom? (la température actuelle de ce lieu est de
                 <?php echo $temp7;?>°C)</legend>
-            <input type="submit" name="choice7" value="Rio">
-            <input type="submit" name="choice7" value="Nairobi">
-        </form>
+            <button id="bad7">Rio</button>
+            <button id="good7">Nairobi</button>
+        </div>
     </div>
     <div id="question8" class="caché">
         <img src="<?php echo $photo8['image']?>">
-        <form action="validate.php" id="quest8" method="post">
+        <div id="quest8">
             <legend>Question 8 : S'agit il d'une station météorologique ou d'un aéroport ? (la température actuelle de ce lieu est de
                 <?php echo $temp8;?>°C)</legend>
-            <input type="submit" name="choice8" value="Station météorologique">
-            <input type="submit" name="choice8" value="Aéroport">
-        </form>
+            <button id="good8">Aéroport</button>
+            <button id="bad8">Station météorologique</button>
+        </div>
     </div>
     <p class="caché">Le président Emmanuel Macron annonce la fin du confinement</p>
-
-</form>
