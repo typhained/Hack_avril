@@ -107,7 +107,5 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     window.setTimeout(function () {
         location.href = 'index.php';
     }, 50000);
-
 </script>
-
 </html>
