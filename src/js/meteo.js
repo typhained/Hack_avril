@@ -6,8 +6,8 @@ const options = {
     verbose: true,
 
     // Optional: Initial state of the map
-    lat: 50.4,
-    lon: 14.3,
+    lat: 48.58,
+    lon: 7.75i,
     zoom: 5,
 };
 
@@ -37,7 +37,9 @@ windyInit(options, windyAPI => {
 
     // Wait since wather is rendered
     broadcast.once('redrawFinished', () => {
-        picker.open({ lat: 48.4, lon: 14.3 });
+        picker.open({ lat: 48.58, lon: 7.75 });
         // Opening of a picker (async)
     });
 });
+
+
