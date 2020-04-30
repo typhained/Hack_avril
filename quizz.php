@@ -1,91 +1,108 @@
-<?php
+    <?php
 
 require_once 'ApiClass.php';
 $cam = new WindyApi();
-$photo1 = $cam->getPhoto(1368909881);
-$photo2 = $cam->getPhoto(1368909881);
-$photo3 = $cam->getPhoto(1368909881);
-$photo4 = $cam->getPhoto(1584623106);
-$photo5 = $cam->getPhoto(1368909881);
-$photo6 = $cam->getPhoto(1368909881);
-$photo7 = $cam->getPhoto(1368909881);
-$photo8 = $cam->getPhoto(1368909881);
+$photo1 = $cam->getPhoto(1521788187);
+$photo2 = $cam->getPhoto(1511477795);
+$photo3 = $cam->getPhoto(1575921043);
+$photo4 = $cam->getPhoto(1230041254);
+$photo5 = $cam->getPhoto(1567484660);
+$photo6 = $cam->getPhoto(1354637608);
+$photo7 = $cam->getPhoto(1284287764);
+$photo8 = $cam->getPhoto(1494830834);
 
+$temp1 = $cam->getweather(64.68,97.74);
+$temp2 = $cam->getweather(48.85,2.35);
+$temp3 = $cam->getWeather(25.34,51.52);
+$temp4 = $cam->getweather(41.91,12.48);
+$temp5 = $cam->getweather(31.26,121.47);
+$temp6 = $cam->getweather(64.13,-21.94);
+$temp7 = $cam->getweather(-1.29,36.81);
+$temp8 = $cam->getweather(46.21,-63.26);
 ?>
-
-<h2>Question n°1</h2>
-<form action="journal.php" id="quest1" method="post">
-    Ce monument est il au Kazakhstan ? :
-    <input type="submit" name="choice" value="Vrai">
-    <input type="submit" name="choice" value="Faux"><br>
-    <img src="<?php echo $photo1['image']?>">
-    <!-- 61.617,37.046,5 -->
-    <!-- Réponse FAUX -->
-</form>
-
-<h2>Question n°2</h2>
-<form action="journal.php" id="quest2" method="post">
-    Sommes nous en France ? :
-    <input type="submit" name="choice2" value="Vrai">
-    <input type="submit" name="choice2" value="Faux"><br>
-    <img src="<?php echo $photo2['image']?>">
-    <!-- 49.372,7.251,7 -->
-    <!-- Réponse FAUX -->
-</form>
-
-<h2>Question n°3</h2>
-<form action="journal.php" id="quest3" method="post">
-    Sommes nous en Europe ? :
-    <input type="submit" name="choice3" value="Vrai">
-    <input type="submit" name="choice3" value="Faux"><br>
-    <img src="<?php echo $photo3['image']?>">
-    <!-- 38.462,-10.767,5 -->
-    <!-- Réponse VRAI -->
-</form>
-
-<h2>Question n°4</h2>
-<form action="journal.php" id="quest4" method="post">
-    Cette montagne est en Suisse ? :
-    <input type="submit" name="choice4" value="Vrai">
-    <input type="submit" name="choice4" value="Faux"><br>
-    <img src="<?php echo $photo4['image']?>">
-    <!-- Réponse VRAI -->
-</form>
-
-<h2>Question n°5</h2>
-<form action="journal.php" id="quest5" method="post">
-    ? :
-    <input type="submit" name="choice5" value="Espagne">
-    <input type="submit" name="choice5" value="Italie"><br>
-    <img src="<?php echo $photo5['image']?>">
-    <!-- -->
-</form>
-
-<h2>Question n°6</h2>
-<form action="journal.php" id="quest6" method="post">
-     ? :
-    <input type="submit" name="choice6" value="Vrai">
-    <input type="submit" name="choice6" value="Faux"><br>
-    <img src="<?php echo $photo6['image']?>">
-    <!-- -->
-</form>
-
-<h2>Question n°7</h2>
-<form action="journal.php" id="quest7" method="post">
-      ? :
-    <input type="submit" name="choice7" value="Vrai">
-    <input type="submit" name="choice7" value="Faux"><br>
-    <img src="<?php echo $photo7['image']?>">
-    <!-- -->
-</form>
-
-<h2>Question n°8</h2>
-<form action="journal.php" id="quest8" method="post">
-      ? :
-    <input type="submit" name="choice8" value="Vrai">
-    <input type="submit" name="choice8" value="Faux"><br>
-    <img src="<?php echo $photo8['image']?>">
-    <!-- -->
-</form>
-
-
+    <div id="question1" class="">
+        <img src="<?php echo $photo1['image']?>">
+        <div class="temp">(la température actuelle de ce lieu est de
+            <?php echo $temp1;?>°C)</div>
+        <div class="quest" >
+            <legend>Question 1 : Ce monument est il au Kazakhstan ou en Russie ? </legend>
+            <button id="bad">Kazakhstan</button>
+            <button id="good">Russie</button>
+        </div>
+    </div>
+    <div id="question2" class="caché">
+        <img src="<?php echo $photo2['image']?>">
+        <div class="temp">La température actuelle de ce lieu est de
+            <?php echo $temp2;?>°C</div>
+        <div class="quest" >
+            <legend>Question 2 : Sommes nous en France ? </legend>
+            <button id="bad2">Faux</button>
+            <button id="good2">Vrai</button>
+            <!-- 49.372,7.251,7 -->
+            <!-- Réponse FAUX -->
+        </div>
+    </div>
+    <div id="question3" class="caché">
+        <img src="<?php echo $photo3['image']?>">
+        <div class="temp">La température actuelle de ce lieu est de
+            <?php echo $temp3;?>°C</div>
+        <div class="quest" >
+                <legend>Question 3 : Sommes nous en Europe ? </legend>
+                <button id="good3">Faux</button>
+                <button id="bad3">Vrai</button>
+                <!-- 38.462,-10.767,5 -->
+                <!-- Réponse VRAI -->
+            </div>
+    </div>
+    <div id="question4" class="caché">
+        <img src="<?php echo $photo4['image']?>">
+        <div class="temp"> La température actuelle de ce lieu est de
+            <?php echo $temp4;?>°C</div>
+        <div class="quest" >
+            <legend>Question 4 : En quelle année à été terminé la place St-Pierre ?</legend>
+            <button id="good4">1667</button>
+            <button id="bad4">1982</button>
+            <!-- Réponse VRAI -->
+        </div>
+    </div>
+    <div id="question5" class="caché">
+        <img src="<?php echo $photo5['image']?>">
+        <div class="temp">La température actuelle de ce lieu est de
+            <?php echo $temp5;?>°C</div>
+        <div class="quest" >
+            <legend>Question 5 : Combien mesure l'Oriental Pearl Tv Tower ? </legend>
+            <button id="good5">468m</button>
+            <button id="bad5">684m</button>
+        </div>
+    </div>
+    <div id="question6" class="caché">
+        <img src="<?php echo $photo6['image']?>">
+        <div class="temp">La température actuelle de ce lieu est de
+            <?php echo $temp6;?>°C</div>
+        <div class="quest" >
+            <legend>Question 6 : Comment s'orthographie correctement cette ville Islandaise ?</legend>
+            <button id="bad6">Rekyajvik</button>
+            <button id="good6">Reykjavik</button>
+        </div>
+    </div>
+    <div id="question7" class="caché">
+        <img src="<?php echo $photo7['image']?>">
+        <div class="temp">La température actuelle de ce lieu est de
+            <?php echo $temp7;?>°C</div>
+        <div class="quest" >
+            <legend>Question 7 : A quel personnage de la serie La Casa de Papel, cette ville à prêtée son nom? </legend>
+            <button id="bad7">Rio</button>
+            <button id="good7">Nairobi</button>
+        </div>
+    </div>
+    <div id="question8" class="caché">
+        <img src="<?php echo $photo8['image']?>">
+        <div class="temp"> La température actuelle de ce lieu est de
+            <?php echo $temp8;?>°C</div>
+        <div class="quest" >
+            <legend>Question 8 : S'agit il d'une station météorologique ou d'un aéroport ?</legend>
+            <button id="good8">Aéroport</button>
+            <button id="bad8">Station météorologique</button>
+        </div>
+    </div>
+    <p id="confinement" class="caché">Le président Emmanuel Macron annonce la fin du confinement</p>

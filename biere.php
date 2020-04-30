@@ -6,11 +6,12 @@ $camResult2 = $cam->getCityCam(36.558,137.997,8);
 $camResult3 = $cam->getCityCam(64.720,-22.769,50);
 $camResult4 = $cam->getCityCam(60.213,16.754,136);
 //$camResult5 = $cam->getCityCam(-7.504,31.333,16);
-//$camResult6 = $cam->getCityCam(47.42,-139.83,4);
+$camResult6 = $cam->getCityCam(47.42,-139.83,4);
 $camResult7 = $cam->getCityCam(50.534,1.612,19);
 $camResult8 = $cam->getCityCam(50.422,1.537,18);
 $camResult9 = $cam->getCityCam(28.758,111.160,156);
 $camResult10 = $cam->getCityCam(53.295,-9.547,57);
+
 
 ?>
 <!doctype html>
@@ -24,15 +25,14 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     <title>Biere</title>
 </head>
 <body>
+    <img id="flash" src="src/img/flash.png">
     <img src="src/img/brume.png" id="brume" />
+    <article>
+        <p id="nara-biere"><?=$camResult1['camTitle']?> était tellement beau!</p>
+    </article>
     <div id="over-brume">
-        <article>
-            <p id="nara-biere"><?=$camResult1['camTitle']?> était tellement beau!</p>
+            <iframe id='frame' src="<?=$camResult1['camEmbed']?>?autoplay=1&showinfo=0"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>
         </article>
-            <iframe id='frame' src="<?=$camResult1['camEmbed']?>?autoplay=1&showinfo=0"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
-        </article>
-
-        <a href="index.php"><button>Retour</button></a>
     </div>
 </body>
 <!-- Optional JavaScript -->
@@ -42,59 +42,70 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 <script>
     var day = "3";
+    $('#flash').fadeOut(3500);
 
     localStorage.setItem("day", day);
 //cam2
     window.setTimeout(function () {
-       $('#nara-biere').html("Une vue à couper le souffle!")
-    }, 5000);
+        $('#frame').attr('src', '<?=$camResult2['camEmbed']?>?autoplay=1&showinfo=0');
+    }, 6000);
     window.setTimeout(function () {
-            $('#frame').attr('src', '<?=$camResult2['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 5000);
+       $('#nara-biere').html("Une vue à couper le souffle!")
+    }, 6000);
+
 //cam3
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult3['camTitle'] ?> est époustouflant")
-    }, 10000);
-    window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult3['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 10000);
+    }, 12000);
+    window.setTimeout(function () {
+        $('#nara-biere').html("<?=$camResult3['camTitle'] ?> est époustouflant")
+    }, 12000);
+
 //cam4
     window.setTimeout(function () {
-        $('#nara-biere').html("A <?=$camResult4['camTitle']?>, il faisait trop froid!")
-    }, 15000);
-    window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult4['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 15000);
+    }, 18000);
+    window.setTimeout(function () {
+        $('#nara-biere').html("A <?=$camResult4['camTitle']?>, il faisait trop froid!")
+    }, 18000);
+
 //cam7
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult7['camTitle']?>")
-    }, 20000);
-    window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult7['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 20000);
+    }, 24000);
+    window.setTimeout(function () {
+        $('#nara-biere').html("<?=$camResult7['camTitle']?>")
+    }, 24000);
+
 //cam8
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult8['camTitle']?>")
-    }, 25000);
-    window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult8['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 25000);
+    }, 30000);
+    window.setTimeout(function () {
+        $('#nara-biere').html("<?=$camResult8['camTitle']?> !")
+    }, 30000);
+
 //cam9
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult9['camTitle']?> avait un paysage ahurissant!")
-    }, 30000);
-    window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult9['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 30000);
+    }, 36000);
+    window.setTimeout(function () {
+        $('#nara-biere').html("<?=$camResult9['camTitle']?> avait un paysage ahurissant!")
+    }, 36000);
+
 //cam10
     window.setTimeout(function () {
-        $('#nara-biere').html("<?=$camResult10['camTitle']?>  pas de beau temps mais de la bonne binouse")
-    }, 35000);
-    window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult10['camEmbed']?>?autoplay=1&showinfo=0');
-    }, 35000);
+    }, 42000);
+    window.setTimeout(function () {
+        $('#nara-biere').html("<?=$camResult10['camTitle']?>  pas de beau temps mais de la bonne binouse")
+    }, 42000);
+    window.setTimeout(function () {
+        $('#flash').fadeIn(2000);
+    }, 48000);
 
+    window.setTimeout(function () {
+        location.href = 'index.php';
+    }, 50000);
 </script>
-
-
 </html>

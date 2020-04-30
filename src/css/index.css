@@ -59,6 +59,12 @@ article:first-of-type{
     top: 176px;
     right: 627px;
 }
+
+#tv img {
+    height: 180px;
+    width: auto;
+    opacity: 1;
+}
 article:nth-of-type(2){
      display: flex;
      justify-content: space-between;
@@ -116,7 +122,7 @@ article:nth-of-type(2){
 
 /* objet a cliquer */
 .selected {
-    box-shadow: 0px 0px 5px #fff;
+    box-shadow: 2px 2px 5px #fff;
 }
 
 .selected:hover {
@@ -144,4 +150,44 @@ article:nth-of-type(2){
 iframe {
     width: 100vw;
     height: 100vh;
+}
+
+.blur {
+    -webkit-animation: blur 0.5s linear forwards;
+    -moz-animation: blur 0.5s linear forwards;
+    -ms-animation: blur 0.5s linear forwards;
+    -o-animation: blur 0.5s linear forwards;
+    animation: blur 0.5s linear forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.delay {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+@-webkit-keyframes blur {
+    to {
+        -webkit-filter: blur(5px);
+        filter: blur(15px);
+    }
+}
+@-moz-keyframes blur {
+    to {
+        -moz-filter: blur(5px);
+        filter: blur(15px);
+    }
+}
+@keyframes blur {
+    to {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        filter: blur(15px);
+    }
+}
+
+#flash {
+    position: absolute;
+    z-index: 200;
 }

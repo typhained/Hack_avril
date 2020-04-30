@@ -14,13 +14,13 @@
 <body>
 
 <section id="salon" class="jour">
-    <button id="zero">Remise à zero</button>
-        <article>
-            <p id="nara-index">Voyons voir ce qu'il y a à la télé ce soir!</p>
-        </article>
+    <img class="hidden" id="flash" src="src/img/flash.png">
+    <article>
+            <p id="nara-index">Voyons voir ce qu'il y a à la télé aujourd'hui...</p>
+    </article>
 
     <div  class="col" id="tv">
-        <p></p>
+        <img class="hidden" src="src/img/BN.png">
     </div>
     <article>
         <div class="tableBasse1">
@@ -47,7 +47,7 @@
 </section>
 <section class="container" id="corona">
 
-    <iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/uoIz2zjARkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="yt" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </section>
 <div id="end">THE END</div>
