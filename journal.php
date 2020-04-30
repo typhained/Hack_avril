@@ -13,14 +13,9 @@ require_once 'ApiClass.php';
 </head>
 <body>
     <div id="img-bg"></div>
-        <div class="col">Que dit la meteo</div>
-    </div>
     <div class="row">
-        <div class="raw">Ici Votre Quiz !</div>
         <?php require 'validate.php'; ?>
     </div>
-    <a href="index.php"><button>Retour</button></a>
-</section>
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
