@@ -69,7 +69,7 @@ if (day == "2") {
         $('#salon').addClass("blur");
         $('#salon').animate({
             opacity: 0
-        }, 3000,function() {
+        }, 2500,function() {
             //thing to do when you animation is finished e.g.
             location.href = 'biere.php';
         });
@@ -91,10 +91,12 @@ if (day == "2") {
     window.setTimeout(function () {
         $("#nara-index").html("On va lire un peu le journal...");
     }, 5000);
+    $("#player").attr("src", "src/journal.mp3")
     $('#journal').click(function () {
+        $("#player")[0].play();
         $('#salon').animate({
             opacity: 0
-        }, 1000,function() {
+        }, 2000,function() {
             location.href = 'journal.php';
         });
     });
