@@ -1,0 +1,43 @@
+#img-bg {
+    background-image: url("../img/journal-open.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+.caché{
+    display: none;
+}
+img {
+    position: absolute;
+    top: 475px;
+    left: 150px;
+    z-index: 3;
+}
+form {
+    position: absolute;
+    top: 480px;
+    right: 250px;
+    z-index: 3;
+    width: 500px;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+form legend {
+    padding: 10px 0;
+}
+form input {
+    display: block;
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+p {
+    background-color: #1f2931;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 30%;
+}

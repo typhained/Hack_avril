@@ -8,27 +8,15 @@ require_once 'ApiClass.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="src/css/journal.css">
     <title>Lire le journal</title>
 </head>
 <body>
-
-<section class="container">
-    <h1>Que dit le journal</h1>
+    <div id="img-bg"></div>
     <div class="row">
-        <div class="col">Que dit la meteo</div>
-    </div>
-    <div class="col">
-        <div class="raw">Ici Votre Quiz !</div>
         <?php require 'validate.php'; ?>
     </div>
-    <a href="index.php"><button>Retour</button></a>
-
-</section>
-
-
 </body>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
