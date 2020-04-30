@@ -23,7 +23,7 @@ $temp8 = $cam->getweather(46.21,-63.26);
         <img src="<?php echo $photo1['image']?>">
         <p>(la température actuelle de ce lieu est de <?php echo $temp1;?>°C)</p>
         <div class="quest" >
-            <legend>Question 1 : Ce monument est il au Kazakhstan ou en Russie ? </legend>
+            <legend>Question 1  <br><br>  Ce monument est il au Kazakhstan ou en Russie ? </legend>
             <button id="bad">Kazakhstan</button>
             <button id="good">Russie</button>
         </div>
