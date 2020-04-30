@@ -1,9 +1,5 @@
 <?php
 require_once 'ApiClass.php';
-$cam = new WindyApi('J8lrm1QEzevtGO5nLI9OuJUvzkZZ7SQp');
-$camResult = $cam->getCityCam(43.17,5.6,20);
-$photo1 = $cam->getPhoto(43.17,5.6,20);
-$resultPhoto = $photo1['image'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,12 +15,12 @@ $resultPhoto = $photo1['image'];
 
 <section class="container">
     <h1>Que dit le journal</h1>
-    <img src="<?php echo $photo1['image'] ?>">
     <div class="row">
         <div class="col">Que dit la meteo</div>
     </div>
     <div class="col">
         <div class="raw">Ici Votre Quiz !</div>
+        <?php require 'validate.php'; ?>
     </div>
     <a href="index.php"><button>Retour</button></a>
 
