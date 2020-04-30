@@ -92,8 +92,7 @@ class WindyApi
         } else {
             $data = json_decode($data, true);
                 $resultTemp = $data['main']['temp'];
-                $resultCity = $data['name'];
-                $results= array($resultCity,$resultTemp);
+                $results= $resultTemp;
             return $results;
         }
 
