@@ -36,17 +36,43 @@ img {
     margin: 10px auto 0 auto;
 }
 p {
-    background-color: #1f2931;
+    position: absolute;
+    top: 705px;
+    left:170px;
+}
+#confinement {
+    background-color: gray;
     position: absolute;
     color: white;
-    bottom: 0;
-    left: 30%;
+    bottom: 94px;
+    left: 20%;
+    text-align: center;
+    width: 800px;
+    text-transform: uppercase;
+}
+
+#confinement img {
+    width: 025vw;
+    position: relative;
+    top: 8px;
+    left: auto;
+    filter: invert(86%);
+    color: white;
+    padding-bottom: 25px;
+}
+
+#confinement h1 {
+    padding-top: 20px;
 }
 
 .good {
-    background-color : green;
+    background-color : #2ecc71;
+    transition-duration: 1s;
+    color:white;
 }
 
 .bad {
-    background-color: red;
+    background-color: #e74c3c;
+    transition-duration: 1s;
+    color: white;
 }
