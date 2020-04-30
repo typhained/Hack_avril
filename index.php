@@ -47,7 +47,7 @@
 </section>
 <section class="container" id="corona">
 
-    <iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/uoIz2zjARkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="yt" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </section>
 <div id="end">THE END</div>
