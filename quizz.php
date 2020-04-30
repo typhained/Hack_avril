@@ -10,7 +10,6 @@ $photo5 = $cam->getPhoto(1567484660);
 $photo6 = $cam->getPhoto(1354637608);
 $photo7 = $cam->getPhoto(1284287764);
 $photo8 = $cam->getPhoto(1494830834);
-
 $temp1 = $cam->getweather(64.68,97.74);
 $temp2 = $cam->getweather(48.85,2.35);
 $temp3 = $cam->getWeather(25.34,51.52);
@@ -25,6 +24,10 @@ $temp8 = $cam->getweather(46.21,-63.26);
         <p>(la température actuelle de ce lieu est de <?php echo $temp1;?>°C)</p>
         <div class="quest" >
             <legend>Question 1 <br><br>Ce monument est il au Kazakhstan ou en Russie ?</legend>
+        <div class="temp">(la température actuelle de ce lieu est de
+            <?php echo $temp1;?>°C)</div>
+        <div class="quest" >
+            <legend>Question 1 : Ce monument est il au Kazakhstan ou en Russie ? </legend>
             <button id="bad">Kazakhstan</button>
             <button id="good">Russie</button>
         </div>
@@ -62,7 +65,7 @@ $temp8 = $cam->getweather(46.21,-63.26);
         <div class="quest">
             <legend>Question 5 <br><br> Combien mesure l'Oriental Pearl Tv Tower ?</legend>
             <button id="good5">468m</button>
-            <button id="bad5">Russie</button>
+            <button id="bad5">684m</button>
         </div>
     </div>
     <div id="question6" class="caché">
@@ -77,8 +80,11 @@ $temp8 = $cam->getweather(46.21,-63.26);
     <div id="question7" class="caché">
         <p>(la température actuelle de ce lieu est de <?php echo $temp7;?>°C)</p>
         <img src="<?php echo $photo7['image']?>">
+        <div class="temp">La température actuelle de ce lieu est de
+            <?php echo $temp7;?>°C</div>
         <div class="quest" >
             <legend>Question 7 <br><br> A quel personnage de la serie La Casa de Papel, cette ville à prêtée son nom?</legend>
+
             <button id="bad7">Rio</button>
             <button id="good7">Nairobi</button>
         </div>
