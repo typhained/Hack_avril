@@ -20,6 +20,7 @@ if (day == "1") {
     // fade In de la video
     window.setTimeout(function () {
         $("#corona").animate({opacity : 1}, 1000)
+        $("#yt").attr("src", "https://www.youtube.com/embed/uoIz2zjARkc?autoplay=1&showinfo=0&controls=0");
     }, 3000);
 
     // fade Out de la video
@@ -101,7 +102,6 @@ if (day == "2") {
     $("#corona").hide();
     $("#biere").toggleClass("hidden");
     $("#biere-vide").toggleClass("hidden");
-
     $("#journal").removeClass("selected");
     $("#nara-index").html("C'est la fin du confinement!");
     $("#tv img").removeClass("hidden");

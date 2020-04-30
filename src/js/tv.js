@@ -4,11 +4,13 @@ localStorage.setItem("day", day);
 
 window.setTimeout(function () {
     $("#windy").toggleClass("hidden");
-}, 10000);
+}, 15000);
+
 
 window.setTimeout(function () {
     $("iframe").toggleClass("hidden");
-}, 10000);
+    $("iframe").attr("src", "https://www.youtube.com/embed/cRy5_KpPxyM?autoplay=1&showinfo=0&controls=0");
+}, 15000);
 
 
 $("#tv-off").click(function(){
