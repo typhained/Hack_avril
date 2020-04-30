@@ -16,7 +16,7 @@ img {
     left: 150px;
     z-index: 3;
 }
-form {
+.quest {
     position: absolute;
     top: 480px;
     right: 250px;
@@ -26,10 +26,10 @@ form {
     padding: 20px;
     text-align: center;
 }
-form legend {
+.quest legend {
     padding: 10px 0;
 }
-form input {
+.quest button {
     display: block;
     width: 80%;
     margin: 10px auto 0 auto;
@@ -40,4 +40,12 @@ p {
     color: white;
     bottom: 0;
     left: 30%;
+}
+
+.good {
+    background-color : green;
+}
+
+.bad {
+    background-color: red;
 }
