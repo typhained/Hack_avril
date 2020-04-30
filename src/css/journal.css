@@ -35,17 +35,28 @@ img {
     margin: 10px auto 0 auto;
 }
 p {
+    position: absolute;
+    top: 705px;
+    left:170px;
+}
+#confinement {
     background-color: #1f2931;
     position: absolute;
     color: white;
-    bottom: 0;
+    bottom: 94px;
     left: 30%;
+    text-align: center;
+    width: 500px;
 }
 
 .good {
-    background-color : green;
+    background-color : #2ecc71;
+    transition-duration: 1s;
+    color:white;
 }
 
 .bad {
-    background-color: red;
+    background-color: #e74c3c;
+    transition-duration: 1s;
+    color: white;
 }
