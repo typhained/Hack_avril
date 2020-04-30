@@ -20,7 +20,7 @@
         </article>
 
     <div  class="col" id="tv">
-        <p></p>
+        <img class="hidden" src="src/img/BN.png">
     </div>
     <article>
         <div class="tableBasse1">

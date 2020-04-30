@@ -29,7 +29,7 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
         <p id="nara-biere"><?=$camResult1['camTitle']?> était tellement beau!</p>
     </article>
     <div id="over-brume">
-            <iframe id='frame' src="<?=$camResult1['camEmbed']?>?autoplay=1&showinfo=0"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+            <iframe id='frame' src="<?=$camResult1['camEmbed']?>?autoplay=1&showinfo=0"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>
         </article>
     </div>
 </body>
@@ -91,6 +91,15 @@ $camResult10 = $cam->getCityCam(53.295,-9.547,57);
     window.setTimeout(function () {
         $('#frame').attr('src', '<?=$camResult10['camEmbed']?>?autoplay=1&showinfo=0');
     }, 35000);
+
+    window.setTimeout(function () {
+        $('body').animate({
+            opacity: 0
+        }, 1000,function() {
+            //thing to do when you animation is finished e.g.
+            location.href = 'index.php';
+        });
+    }, 40000);
 
 </script>
 

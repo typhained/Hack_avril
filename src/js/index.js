@@ -99,13 +99,14 @@ if (day == "2") {
     $("#biere-vide").toggleClass("hidden");
     $("#journal").removeClass("selected");
     $("#nara-index").html("C'est la fin du confinement!");
-    $("#tv p").html("BREAKING NEWS");
-    window.setTimeout(function () {
-        $("#salon").fadeOut(1000);
-    }, 5000);
-    window.setTimeout(function () {
-        $("#end").animate({opacity : 1}, 1000)
-    }, 6000);
+    $("#tv img").removeClass("hidden");
+
+    // window.setTimeout(function () {
+    //     $("#salon").fadeOut(1000);
+    // }, 5000);
+    // window.setTimeout(function () {
+    //     $("#end").animate({opacity : 1}, 1000)
+    // }, 6000);
     let day = "1";
     localStorage.setItem("day", day);
 }
