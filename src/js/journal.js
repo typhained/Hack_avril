@@ -130,3 +130,11 @@ $("#good8,#bad8").click(function() {
         },
         2000);
 });
+
+$("#confinement").hover(function() {
+    setTimeout(
+        function() {
+            location.href = 'index.php';
+        },
+        2000);
+});
