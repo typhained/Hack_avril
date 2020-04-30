@@ -19,7 +19,7 @@ img {
     position: absolute;
     top: 0;
 }
-iframe{
+#windy, iframe{
     height: 85vh;
     width: 61vw;
     margin: 6% 20% 0 0;
@@ -30,4 +30,9 @@ iframe{
     right: 310px;
     width: 40px;
     height: 40px;
+    color: white;
+}
+
+.hidden {
+    display:none;
 }
