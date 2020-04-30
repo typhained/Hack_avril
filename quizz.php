@@ -94,4 +94,7 @@ $temp8 = $cam->getweather(46.21,-63.26);
             <button id="bad8">Station météorologique</button>
         </div>
     </div>
-    <h1 id="confinement" class="caché">Le président Emmanuel Macron annonce la fin du confinement</h1>
+    <div id="confinement" class="caché">
+        <img src="src/img/brkn.png">
+        <h1>Le président Emmanuel Macron annonce la fin du confinement</h1>
+    </div>
