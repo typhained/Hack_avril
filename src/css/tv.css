@@ -19,20 +19,27 @@ img {
     position: absolute;
     top: 0;
 }
-#windy, iframe{
+iframe{
     height: 85vh;
     width: 61vw;
     margin: 6% 20% 0 0;
 }
+#windy{
+    height: 82vh;
+    width: 61vw;
+    margin: 7% 0 0 0;
+    left:10%;
+}
 #tv-off{
     position: absolute;
-    bottom: 257px;
-    right: 310px;
+    bottom: 272px;
+    right: 325px;
     width: 40px;
     height: 40px;
     color: white;
+    border-radius: 50px;
+    border: 2px solid white;
 }
-
 .hidden {
     display:none;
 }
