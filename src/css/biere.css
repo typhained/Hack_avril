@@ -15,7 +15,7 @@ body{
     overflow-y: hidden;
     z-index: 3;
     position: absolute;
-    top: 0;
+    top: 80px;
 }
 iframe{
     height: 80vh;
@@ -36,4 +36,7 @@ article:first-of-type{
     width: 50%;
     background-color: #1f2931;
     color: white;
+    position: absolute;
+    top: 0;
+    z-index: 4;
 }
